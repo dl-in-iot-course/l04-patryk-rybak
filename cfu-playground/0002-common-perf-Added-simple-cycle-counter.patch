@@ -1,0 +1,59 @@
+From 4ccf5152db7ec01bef42f9a430b1909e6e05f0d3 Mon Sep 17 00:00:00 2001
+From: Grzegorz Latosinski <glatosinski@antmicro.com>
+Date: Wed, 8 May 2024 09:30:43 +0200
+Subject: [PATCH 2/2] common: perf: Added simple cycle counter
+
+Signed-off-by: Grzegorz Latosinski <glatosinski@antmicro.com>
+---
+ common/src/perf.cc   | 1 +
+ common/src/perf.h    | 1 +
+ common/src/tflite.cc | 2 ++
+ 3 files changed, 4 insertions(+)
+
+diff --git a/common/src/perf.cc b/common/src/perf.cc
+index 60f2ca92..553a3a44 100644
+--- a/common/src/perf.cc
++++ b/common/src/perf.cc
+@@ -19,6 +19,7 @@
+ #include "menu.h"
+ 
+ unsigned CFU_start_counts[NUM_PERF_COUNTERS];
++uint32_t cycle_counter = 0;
+ 
+ void perf_print_human(uint64_t n) {
+   if (n > 9999999) {
+diff --git a/common/src/perf.h b/common/src/perf.h
+index bfd822fc..4f8ca40e 100644
+--- a/common/src/perf.h
++++ b/common/src/perf.h
+@@ -33,6 +33,7 @@ extern "C" {
+ #define NUM_PERF_COUNTERS 0
+ #endif
+ 
++extern uint32_t cycle_counter;
+ 
+ extern unsigned CFU_start_counts[NUM_PERF_COUNTERS];
+ 
+diff --git a/common/src/tflite.cc b/common/src/tflite.cc
+index 906fbda4..05850ce2 100644
+--- a/common/src/tflite.cc
++++ b/common/src/tflite.cc
+@@ -251,6 +251,7 @@ void tflite_classify() {
+   // Run the model on this input and make sure it succeeds.
+   profiler->ClearEvents();
+   perf_reset_all_counters();
++  cycle_counter = 0;
+ 
+   // perf_set_mcycle is a no-op for some boards, start and end used instead.
+   uint64_t start = perf_get_mcycle64();
+@@ -265,6 +266,7 @@ void tflite_classify() {
+ #endif
+   perf_print_value(end - start);  // Possible overflow is intentional here.
+   printf(" cycles total\n");
++  printf("Tracked cycles: %lu\n", cycle_counter);
+ }
+ 
+ int8_t* get_input() { return interpreter->input(0)->data.int8; }
+-- 
+2.43.0
+
