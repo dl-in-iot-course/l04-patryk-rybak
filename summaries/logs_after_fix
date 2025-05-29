@@ -1,0 +1,203 @@
+2025-05-28 17:08:36.737986: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1748452116.755743      70 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1748452116.760869      70 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1748452116.775158      70 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1748452116.775202      70 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1748452116.775207      70 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1748452116.775226      70 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-05-28 17:08:36.779126: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+TVM MODEL WITH NHWC LAYOUT
+/usr/local/lib/python3.11/dist-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+One or more operators have not been tuned. Please tune your model for better performance. Use DEBUG logging level to see more details.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+evaluating tvm-fp32-nhwc: 100%|██████████| 3669/3669 [01:45<00:00, 34.86it/s]
+TVM MODEL WITH NCHW LAYOUT OPT LEVEL 1
+/usr/local/lib/python3.11/dist-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+evaluating tvm-fp32-opt1: 100%|██████████| 3669/3669 [01:52<00:00, 32.47it/s]
+TVM MODEL WITH NCHW LAYOUT OPT LEVEL 2
+/usr/local/lib/python3.11/dist-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+depthwise_conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+conv2d NHWC layout is not optimized for x86 with autotvm.
+evaluating tvm-fp32-opt2: 100%|██████████| 3669/3669 [01:51<00:00, 32.83it/s]
+TVM MODEL WITH NCHW LAYOUT OPT LEVEL 3
+/usr/local/lib/python3.11/dist-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+evaluating tvm-fp32-opt3: 100%|██████████| 3669/3669 [00:42<00:00, 87.05it/s]
+TVM MODEL WITH NCHW LAYOUT OPT LEVEL 4
+/usr/local/lib/python3.11/dist-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+evaluating tvm-fp32-opt4: 100%|██████████| 3669/3669 [00:42<00:00, 86.97it/s]
+TVM PRE-QUANTIZED MODEL WITH NCHW LAYOUT
+/usr/local/lib/python3.11/dist-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+evaluating tvm-int8: 100%|██████████████| 3669/3669 [00:33<00:00, 108.06it/s]
+
